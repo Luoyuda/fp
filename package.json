@@ -1,12 +1,26 @@
 {
-  "name": "fp-demo",
+  "name": "fp",
   "version": "1.0.0",
-  "description": "函数式编程",
+  "description": "javascript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "onchange --await-write-finish 500 -i \"**/*.js\" -- cross-env change='{{changed}}' node scripts/change.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luoyuda/fp.git"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Luoyuda/fp/issues"
+  },
+  "devDependencies": {
+    "chalk": "^4.1.0",
+    "cross-env": "^7.0.2",
+    "onchange": "^7.0.2",
+    "shelljs": "^0.8.4"
+  },
+  "homepage": "https://github.com/Luoyuda/fp#readme"
 }

@@ -500,9 +500,3 @@ var divide = (sum, len) => sum / len
 var d = pipe(fork(divide, sum, len), log)
 d([10,20,30,40]) // 25
 ```
-
-### 函子
-
-函子是一个普通对象，遍历每个对象值的时候生成一个新对象
-
-### 方法链与函数管道
